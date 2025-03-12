@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="webSaglikProjesi.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Sablon.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+  <div id="govde">
+        <div id="baslik">
+            <div class="divlogo"><img src="images/logo.JPG" /></div>
+            <div class="divslogan">
+                <br />
+                <br />
+                <br />
+                <img src="images/slogan.JPG" /></div>
+            <div class="diviletisim">
+                <br />
+                <br />
+                <br />
+                <br />
+                <asp:Label ID="Label1" runat="server" Text="Tel : (212) 544 44 44"></asp:Label>
+            </div>
+        </div>
+        <div id="ustmenu">Üst Buton Menü</div>
+        <div id="solmenu">Admin İşlemleri<br />
+            <asp:Panel ID="Panel1" runat="server" Visible="false">
+                <ul type="disc">
+                    <a href="KategoriEkle.aspx"><li>Kategori İşlemleri</li></a>
+                    <a href="AltKategoriEkle.aspx"><li>Alt Kategori İşlemleri</li></a>
+                    <a href="UrunEkle.aspx"><li>Ürün İşlemleri</li></a>
+                </ul>
+            </asp:Panel>
+        </div>
+        <div id="icerik"><br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="sagmenu">
+        </div>
+        <div id="altbaslik">Footer</div>
+    </div>
+    </form>
+</body>
+</html>
